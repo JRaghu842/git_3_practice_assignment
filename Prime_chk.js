@@ -1,22 +1,22 @@
 function prime_check(number){
-
-let count = 0;
-for(i=2; i<=number; i++){
+let factor_count = 0;
+for(i=1; i<=number; i++){
   if(number%i==0){
-  count++;
+  factor_count++
   }
 }
-  if(count==1){
-  return true;
+  if(factor_count==2){
+  return true
   }
   else {
-  return false;
-  }  
+  return false
+  }
+  
 }
-let check = prime_check(11)
-if(check === true){
+let check = prime_check(10)
+if(check == true){
 console.log("It is a Prime number")
 }
-else{
+else {
 console.log("It is not a Prime number")
 }
