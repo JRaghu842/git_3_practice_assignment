@@ -1,5 +1,4 @@
 function prime_check(number){
-
 let factor_count = 0;
 for(i=1; i<=number; i++){
   if(number%i==0){
